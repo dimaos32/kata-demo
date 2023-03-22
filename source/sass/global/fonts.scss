@@ -1,18 +1,21 @@
-// @font-face {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-family: "Rouble";
-
-//   font-display: swap;
-//   src:
-//     url("../fonts/rouble.woff2") format("woff2");
-// }
-
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
+  font-family: "Barlow";
 
   font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
+  src:
+    url("../fonts/barlow-400.woff2") format("woff2"),
+    url("../fonts/barlow-400.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Barlow";
+
+  font-display: swap;
+  src:
+    url("../fonts/barlow-600.woff2") format("woff2"),
+    url("../fonts/barlow-600.woff") format("woff");
 }
