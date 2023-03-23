@@ -1,14 +1,40 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 12px;
+
+  font-weight: 600;
+  font-size: 14px;
 
   color: $color-default-white;
 
-  background-color: $color-cerulean;
+  background-color: $color-dodger-blue;
   border: none;
+  border-radius: 5px;
+  outline: none;
   cursor: pointer;
 
-  transition: opacity $trans-default;
+  transition: background-color $trans-default;
+
+  &--facebook {
+    justify-content: flex-start;
+
+    font-weight: 400;
+
+    background-color: $color-endeavour;
+    border-radius: 0;
+  }
+
+  &--linkedin {
+    justify-content: flex-start;
+
+    font-weight: 400;
+
+    background-color: $color-cerulean;
+    border-radius: 0;
+  }
 
   &:disabled {
     opacity: 0.5;
@@ -17,6 +43,16 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    background-color: $color-arapawa;
+  }
+}
+
+.btn__icon {
+  &:not(:first-child) {
+    margin-left: 15px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 15px;
   }
 }

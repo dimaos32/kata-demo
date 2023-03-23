@@ -28,12 +28,91 @@
     </div>
     <div class="wrapper">
       <main>
-        <div class="intro">
+        <section class="registration">
           <div class="container">
-            <p style="margin-top: 40px;">Lorem ipsum dolor sit amet.</p>
-            <p style="margin-top: 40px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sed.</p>
+            <div class="registration__wrapper">
+              <div class="registration__cover"><img class="registration__cover-img" src="img/content/registration-cover.jpg" width="759" height="1000" alt=""><img class="registration__logo" src="img/svg/logo.svg" width="150" height="32" alt="">
+              </div>
+              <div class="registration__content">
+                <h1 class="registration__title">Get iintoo it today</h1>
+                <p class="registration__title-hint">There is no obligation upon registration.</p>
+                <div class="registration__socials">
+                  <ul class="registration__social-list">
+                    <li class="registration__social-item">
+                      <button class="btn btn--facebook registration__social-btn" type="button">
+                        <svg class="btn__icon" width="24" height="24" aria-hidden="true">
+                          <use xlink:href="#social-facebook"></use>
+                        </svg><span>Register with Facebook</span>
+                      </button>
+                    </li>
+                    <li class="registration__social-item">
+                      <button class="btn btn--linkedin registration__social-btn" type="button">
+                        <svg class="btn__icon" width="24" height="24" aria-hidden="true">
+                          <use xlink:href="#social-linkedin"></use>
+                        </svg><span>Register with LinkedIn</span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <p class="registration__or-word"><span>or</span></p>
+                <form class="registration__form" action="/" method="post">
+                  <div class="registration__inputs">
+                    <ul class="registration__input-list">
+                      <li class="registration__input-item">
+                        <label class="registration__input-label"><span class="registration__input-label-text">Email</span>
+                          <input class="registration__input" type="email" value="gus.goodwin.com">
+                        </label>
+                      </li>
+                      <li class="registration__input-item">
+                        <label class="registration__input-label"><span class="registration__input-label-text">Phone</span>
+                          <input class="registration__input" type="tel">
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <h1 class="registration__subtitle">What type of investor are you?</h1>
+                  <p class="registration__subtitle-hint">Select the type of investor you are below.</p>
+                  <div class="registration__radio-inputs">
+                    <ul class="registration__radio-input-list">
+                      <li class="registration__radio-input-item">
+                        <label class="registration__radio-input-label">
+                          <input class="visually-hidden" type="radio" name="investor-type" value="individual" checked><span class="registration__radio-input-label-text">Individual</span>
+                        </label>
+                        <button class="registration__radio-input-btn" type="button">i</button>
+                      </li>
+                      <li class="registration__radio-input-item">
+                        <label class="registration__radio-input-label">
+                          <input class="visually-hidden" type="radio" name="investor-type" value="business"><span class="registration__radio-input-label-text">Business</span>
+                        </label>
+                        <button class="registration__radio-input-btn" type="button">i</button>
+                      </li>
+                      <li class="registration__radio-input-item">
+                        <label class="registration__radio-input-label">
+                          <input class="visually-hidden" type="radio" name="investor-type" value="ira"><span class="registration__radio-input-label-text">IRA</span>
+                        </label>
+                        <button class="registration__radio-input-btn" type="button">i</button>
+                      </li>
+                      <li class="registration__radio-input-item">
+                        <label class="registration__radio-input-label">
+                          <input class="visually-hidden" type="radio" name="investor-type" value="trust"><span class="registration__radio-input-label-text">Trust</span>
+                        </label>
+                        <button class="registration__radio-input-btn" type="button">i</button>
+                      </li>
+                    </ul>
+                    <div class="registration__current-radio-input-hint">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
+                  </div>
+                  <div class="registration__agreement">
+                    <label class="registration__agreement-label">
+                      <input class="visually-hidden" type="checkbox" name="agreement"><span class="registration__agreement-label-text">I agree to the terms and receiving notifications from iintoo <a class="registration__agreement-link" href="#">View full terms</a></span>
+                    </label>
+                  </div>
+                  <button class="btn registration__submit-btn" type="submit"><span>Create Account</span>
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   </body>
